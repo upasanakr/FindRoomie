@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">RoomFinder</string>
+    <string name="prompt_select_user_type">Select User Type</string> <!-- Added this line for the prompt -->
+
+    <string-array name="user_types">
+        <item>@string/prompt_select_user_type</item> <!-- Use the prompt as the first item -->
+        <item>seeker</item>
+        <item>lister</item>
+    </string-array>
 </resources>
