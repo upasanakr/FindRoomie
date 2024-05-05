@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +12,16 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.regex.Pattern;
+import com.example.roomfinder.ListerPreferenceActivity;
+import com.example.roomfinder.R;
+import com.example.roomfinder.SeekerPreferenceActivity;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.DataOutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -23,9 +31,6 @@ public class RegisterActivity extends AppCompatActivity {
     private Spinner spinnerUserType;
     private EditText editTextPassword;
     private Button buttonRegister;
-    private DatabaseHelper databaseHelper;
-    private static final Pattern NAME_PATTERN = Pattern.compile("^[a-zA-Z ]+$");
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,26 +49,62 @@ public class RegisterActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerUserType.setAdapter(adapter);
 
-        databaseHelper = new DatabaseHelper(this);
+        buttonRegister.setOnClickListener(v -> {
+            String name = editTextName.getText().toString();
+            String email = editTextEmail.getText().toString();
+            String phoneNumber = editTextPhoneNumber.getText().toString();
+            String userType = spinnerUserType.getSelectedItem().toString();
+            String password = editTextPassword.getText().toString();
 
-        buttonRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String name = editTextName.getText().toString();
-                String email = editTextEmail.getText().toString();
-                String phoneNumber = editTextPhoneNumber.getText().toString();
-                String userType = spinnerUserType.getSelectedItem().toString();
-                String password = editTextPassword.getText().toString();
-
-                if (!validateForm(name, email, phoneNumber, password)) {
-                    return;
-                }
-//                String passwordHash = hashPassword(password);
-                databaseHelper.addUser(name, email, phoneNumber, userType, password);
-                Toast.makeText(RegisterActivity.this, "User registered successfully", Toast.LENGTH_SHORT).show();
-                navigateToHomePage(userType);
+            if (!validateForm(name, email, phoneNumber, password)) {
+                return;
             }
+
+            JSONObject postData = new JSONObject();
+            try {
+                postData.put("name", name);
+                postData.put("email", email);
+                postData.put("phoneNumber", phoneNumber);
+                postData.put("userType", userType);
+                postData.put("passwordHash", password);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            new Thread(() -> {
+                try {
+                    String response = sendPostRequest("https://p9r6bc5kf9.execute-api.us-east-1.amazonaws.com/api/register", postData.toString());
+                    runOnUiThread(() -> {
+                        Toast.makeText(RegisterActivity.this, response, Toast.LENGTH_SHORT).show();
+                        navigateToHomePage(userType);
+                    });
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    runOnUiThread(() -> Toast.makeText(RegisterActivity.this, "Error registering user", Toast.LENGTH_SHORT).show());
+                }
+            }).start();
         });
+    }
+
+    private String sendPostRequest(String url, String postData) throws Exception {
+        URL obj = new URL(url);
+        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+        con.setRequestMethod("POST");
+        con.setRequestProperty("Content-Type", "application/json");
+
+        // Send post request
+        con.setDoOutput(true);
+        DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+        wr.writeBytes(postData);
+        wr.flush();
+        wr.close();
+
+        int responseCode = con.getResponseCode();
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            return "User registered successfully";
+        } else {
+            return "Error registering user";
+        }
     }
 
     private void navigateToHomePage(String userType) {
@@ -79,29 +120,32 @@ public class RegisterActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         } else {
-
             Toast.makeText(this, "Error: User type not recognized.", Toast.LENGTH_LONG).show();
         }
     }
 
     private boolean validateForm(String name, String email, String phone, String password) {
-        if (TextUtils.isEmpty(name) || !NAME_PATTERN.matcher(name).matches()) {
-            Toast.makeText(this, "Name should only contain letters and spaces.", Toast.LENGTH_SHORT).show();
+        if (TextUtils.isEmpty(name)) {
+            editTextName.setError("Name cannot be empty");
+            editTextName.requestFocus();
             return false;
         }
 
         if (TextUtils.isEmpty(email) || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            Toast.makeText(this, "Please enter a valid email address.", Toast.LENGTH_SHORT).show();
+            editTextEmail.setError("Enter a valid email address");
+            editTextEmail.requestFocus();
             return false;
         }
 
         if (TextUtils.isEmpty(phone) || phone.length() != 10) {
-            Toast.makeText(this, "Phone number should be 10 digits.", Toast.LENGTH_SHORT).show();
+            editTextPhoneNumber.setError("Phone number should be 10 digits");
+            editTextPhoneNumber.requestFocus();
             return false;
         }
 
         if (TextUtils.isEmpty(password) || password.length() < 8) {
-            Toast.makeText(this, "Password should be at least 8 characters long.", Toast.LENGTH_SHORT).show();
+            editTextPassword.setError("Password should be at least 8 characters long");
+            editTextPassword.requestFocus();
             return false;
         }
 
