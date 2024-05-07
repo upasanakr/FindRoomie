@@ -1,16 +1,36 @@
 package com.example.roomfinder;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class SeekerHomePageActivity extends AppCompatActivity {
 
+    private static final String TAG = "SeekerHomePageActivity";
+
     private RecyclerView recyclerView;
     private ListingAdapter adapter;
+    private ExecutorService executorService;
+    private Handler handler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,15 +40,84 @@ public class SeekerHomePageActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        List<Listing> listings = new ArrayList<>();
+        int userId = getIntent().getIntExtra("user_id", -1);
+        String apiUrl = "http://54.175.51.201:8080/" + userId + "/recommend";
 
-        listings.add(new Listing(1, "Maple Apartments", "123 Maple Street", 1200, "Spacious apartment with amenities.", "apt1.jpg", 3, 2, "sharing", 2, 1500, "2024-06-01", "12 months", "yes", "any", "no", "yes", "San Francisco", "veg"));
-        listings.add(new Listing(2, "Oak Residences", "456 Oak Avenue", 900, "Cozy apartment with modern amenities.", "apt2.jpg", 2, 1, "private", 1, 1200, "2024-05-15", "6 months", "no", "yes", "yes", "no", "San Jose", "non-veg"));
-        listings.add(new Listing(3, "Pine Terrace", "789 Pine Lane", 1400, "Luxury apartment with scenic views.", "apt3.jpg", 4, 3, "sharing", 3, 2000, "2024-07-01", "12 months", "yes", "yes", "no", "yes", "Los Angeles", "veg"));
-        listings.add(new Listing(4, "Cedar Grove", "321 Cedar Street", 1100, "Affordable apartment with great location.", "apt4.jpg", 2, 1, "private", 1, 1000, "2024-04-20", "9 months", "no", "any", "yes", "no", "San Diego", "non-veg"));
-        listings.add(new Listing(5, "Birch Towers", "654 Birch Boulevard", 1300, "Spacious apartment with garden view.", "apt5.jpg", 3, 2, "sharing", 2, 1800, "2024-05-01", "12 months", "yes", "no", "yes", "yes", "Seattle", "veg"));
+        executorService = Executors.newSingleThreadExecutor();
+        handler = new Handler(Looper.getMainLooper());
 
+        fetchListings(apiUrl);
+    }
+
+    private void fetchListings(String apiUrl) {
+        executorService.execute(() -> {
+            List<Listing> listings = new ArrayList<>();
+            try {
+                URL url = new URL(apiUrl);
+                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                try {
+                    InputStream in = urlConnection.getInputStream();
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+                    StringBuilder response = new StringBuilder();
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        response.append(line);
+                    }
+
+                    Log.d(TAG, "API Response: " + response.toString()); // Log the API response
+
+                    JSONArray jsonArray = new JSONArray(response.toString());
+                    Log.d(TAG, "Number of listings received: " + jsonArray.length()); // Log the number of listings received
+
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        JSONObject jsonObject = jsonArray.getJSONObject(i);
+
+                        Listing listing = new Listing(
+                                jsonObject.has("listing_id") ? jsonObject.optInt("listing_id") : null,
+                                jsonObject.optString("apartment_name", null),
+                                jsonObject.optString("address", null),
+                                jsonObject.has("area") ? jsonObject.optInt("area") : null,
+                                jsonObject.optString("description", null),
+                                jsonObject.has("no_of_bedrooms") ? jsonObject.optInt("no_of_bedrooms") : null,
+                                jsonObject.has("no_of_bathrooms") ? jsonObject.optInt("no_of_bathrooms") : null,
+                                jsonObject.optString("accommodation_type", null),
+                                jsonObject.has("no_of_people_sharing") ? jsonObject.optInt("no_of_people_sharing") : null,
+                                jsonObject.has("rent") ? jsonObject.optInt("rent") : null,
+                                jsonObject.optString("available_from", null),
+                                jsonObject.optString("lease_duration", null),
+                                jsonObject.optString("smoking_preference", null),
+                                jsonObject.optString("drinking_preference", null),
+                                jsonObject.optString("has_smoker", null),
+                                jsonObject.optString("has_drinker", null),
+                                jsonObject.optString("city", null),
+                                jsonObject.optString("food_preference", null),
+                                jsonObject.optString("landmarks", null),
+                                jsonObject.has("match_id") ? jsonObject.optInt("match_id") : null,
+                                jsonObject.optString("status", null),
+                                jsonObject.has("user_id") ? jsonObject.optInt("user_id") : null,
+                                jsonObject.optString("veg_status", null)
+                        );
+                        listings.add(listing);
+                    }
+                } finally {
+                    urlConnection.disconnect();
+                }
+            } catch (IOException | JSONException e) {
+                e.printStackTrace();
+                Log.e(TAG, "Error during API call: " + e.getMessage()); // Log the error message
+            }
+            handler.post(() -> updateUI(listings));
+        });
+    }
+
+    private void updateUI(List<Listing> listings) {
         adapter = new ListingAdapter(listings);
         recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        executorService.shutdown();
     }
 }

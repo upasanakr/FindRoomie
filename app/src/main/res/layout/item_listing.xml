@@ -84,17 +84,17 @@
             android:layout_height="wrap_content"
             android:padding="4dp"/>
 
-        <TextView
-            android:id="@+id/tv_smoking_preference"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="4dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_smoking_preference"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="4dp"/>-->
 
-        <TextView
-            android:id="@+id/tv_drinking_preference"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="4dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_drinking_preference"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="4dp"/>-->
 
         <TextView
             android:id="@+id/tv_has_smoker"
@@ -114,8 +114,40 @@
             android:layout_height="wrap_content"
             android:padding="4dp"/>
 
+
+
         <TextView
             android:id="@+id/tv_food_preference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_landmarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_match_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_veg_status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="4dp"/>

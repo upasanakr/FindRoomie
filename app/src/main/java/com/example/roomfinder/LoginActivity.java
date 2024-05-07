@@ -66,7 +66,8 @@ public class LoginActivity extends AppCompatActivity {
                         // Check if the 'user' object has a 'user_type' key
                         if (userObject.has("user_type")) {
                             String userType = userObject.getString("user_type");
-                            navigateToHomePage(userType);
+                            int userId = Integer.parseInt(userObject.getString("user_id"));
+                            navigateToHomePage(userType, userId);
                         } else {
                             Toast.makeText(LoginActivity.this, "User type not found", Toast.LENGTH_SHORT).show();
                         }
@@ -132,7 +133,7 @@ public class LoginActivity extends AppCompatActivity {
         return stringBuilder.toString();
     }
 
-    private void navigateToHomePage(String userType) {
+    private void navigateToHomePage(String userType, int userId) {
         Intent intent;
         if ("seeker".equals(userType)) {
             intent = new Intent(LoginActivity.this, SeekerHomePageActivity.class);
@@ -142,6 +143,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(LoginActivity.this, "Invalid user type", Toast.LENGTH_SHORT).show();
             return;
         }
+        intent.putExtra("user_id", userId);
         startActivity(intent);
         finish();
     }

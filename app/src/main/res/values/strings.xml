@@ -17,14 +17,18 @@
     <string name="people_sharing_pattern">People Sharing: %1$d</string>
     <string name="available_from_pattern">Available From: %1$s</string>
     <string name="lease_duration_pattern">Lease Duration: %1$s</string>
-    <string name="smoking_preference_pattern">Smoking Preference: %1$s</string>
-    <string name="drinking_preference_pattern">Drinking Preference: %1$s</string>
+<!--    <string name="smoking_preference_pattern">Smoking Preference: %1$s</string>-->
+<!--    <string name="drinking_preference_pattern">Drinking Preference: %1$s</string>-->
     <string name="has_smoker_pattern">Has Smoker: %1$s</string>
     <string name="has_drinker_pattern">Has Drinker: %1$s</string>
     <string name="city_pattern">City: %1$s</string>
     <string name="food_preference_pattern">Food Preference: %1$s</string>
+    <string name="description">Description: %1$s</string>
+    <string name="landmarks">Landmarks: %1$s</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="logout">Logout</string>
+
+
 </resources>
