@@ -21,6 +21,13 @@
         android:layout_height="wrap_content"
         android:padding="4dp" />
 
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"/>
+
+
     <!-- Rent -->
     <TextView
         android:id="@+id/tv_rent"
@@ -84,17 +91,6 @@
             android:layout_height="wrap_content"
             android:padding="4dp"/>
 
-<!--        <TextView-->
-<!--            android:id="@+id/tv_smoking_preference"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="4dp"/>-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/tv_drinking_preference"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="4dp"/>-->
 
         <TextView
             android:id="@+id/tv_has_smoker"
@@ -108,11 +104,6 @@
             android:layout_height="wrap_content"
             android:padding="4dp"/>
 
-        <TextView
-            android:id="@+id/tv_city"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="4dp"/>
 
 
 

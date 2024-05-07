@@ -1,23 +1,13 @@
 package com.example.roomfinder;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import androidx.appcompat.widget.Toolbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,13 +18,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.stream.Collectors;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class SeekerHomePageActivity extends AppCompatActivity {
 
     private static final String TAG = "SeekerHomePageActivity";
 
-    private RecyclerView recyclerView;
-    private ListingAdapter adapter;
+    private RecyclerView recyclerViewPotential;
+    private RecyclerView recyclerViewMatched;
+    private ListingAdapter potentialAdapter;
+    private ListingAdapter acceptedAdapter;
     private ExecutorService executorService;
     private Handler handler;
 
@@ -46,8 +43,11 @@ public class SeekerHomePageActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        recyclerView = findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewPotential = findViewById(R.id.recycler_view_potential);
+        recyclerViewPotential.setLayoutManager(new LinearLayoutManager(this));
+
+        recyclerViewMatched = findViewById(R.id.recycler_view_matched);
+        recyclerViewMatched.setLayoutManager(new LinearLayoutManager(this));
 
         int userId = getIntent().getIntExtra("user_id", -1);
         String apiUrl = "http://54.175.51.201:8080/" + userId + "/recommend";
@@ -68,7 +68,7 @@ public class SeekerHomePageActivity extends AppCompatActivity {
                     InputStream in = urlConnection.getInputStream();
                     BufferedReader reader = new BufferedReader(new InputStreamReader(in));
                     StringBuilder response = new StringBuilder();
-                    String line;
+                    String line = "";
                     while ((line = reader.readLine()) != null) {
                         response.append(line);
                     }
@@ -120,8 +120,26 @@ public class SeekerHomePageActivity extends AppCompatActivity {
     }
 
     private void updateUI(List<Listing> listings) {
-        adapter = new ListingAdapter(listings);
-        recyclerView.setAdapter(adapter);
+
+        List<Listing> potentialMatches = new ArrayList<>();
+        List<Listing> acceptedMatches = new ArrayList<>();
+        for (Listing listing : listings) {
+            if ("no_action".equals(listing.status)) {
+                potentialMatches.add(listing);
+            } else if ("accepted".equals(listing.status)) {
+                acceptedMatches.add(listing);
+            }
+        }
+        potentialAdapter = new ListingAdapter(potentialMatches, "no_action", () -> {
+            acceptedMatches.add(potentialMatches.remove(potentialAdapter.getItemCount() - 1));
+            potentialAdapter.notifyDataSetChanged();
+            acceptedAdapter.notifyDataSetChanged();
+        });
+
+        acceptedAdapter = new ListingAdapter(acceptedMatches, "matched apartments", () -> {});
+
+        recyclerViewPotential.setAdapter(potentialAdapter);
+        recyclerViewMatched.setAdapter(acceptedAdapter);
     }
 
     @Override
@@ -130,22 +148,8 @@ public class SeekerHomePageActivity extends AppCompatActivity {
         executorService.shutdown();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_logout, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_logout) {
-            Intent intent = new Intent(SeekerHomePageActivity.this, LoginActivity.class);
-            startActivity(intent);
-            finish();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+    public void moveToMatched(Listing listing, int position) {
+        potentialAdapter.removeListing(position);
+        acceptedAdapter.addListing(listing);
     }
 }
-

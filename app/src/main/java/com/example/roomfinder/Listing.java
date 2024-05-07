@@ -26,6 +26,7 @@ public class Listing {
     public String veg_status;
 
     public boolean detailsVisible;
+    ListingAdapter.ListerInfo listerInfo;
 
     public Listing(Integer listing_id, String apartment_name, String address, Integer area, String description,
                    Integer no_of_bedrooms, Integer no_of_bathrooms, String accommodation_type, Integer no_of_people_sharing,
