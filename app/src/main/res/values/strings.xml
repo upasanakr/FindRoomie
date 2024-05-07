@@ -1,10 +1,30 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">RoomFinder</string>
-    <string name="prompt_select_user_type">Select User Type</string> <!-- Added this line for the prompt -->
+
+    <string name="prompt_select_user_type">What are you looking for?</string>
 
     <string-array name="user_types">
-        <item>@string/prompt_select_user_type</item> <!-- Use the prompt as the first item -->
-        <item>seeker</item>
-        <item>lister</item>
+        <item>@string/prompt_select_user_type</item>
+        <item>Looking for a Room</item>
+        <item>Looking for a Roommate</item>
     </string-array>
+
+    <string name="rent_pattern">Rent: $%1$d</string>
+    <string name="area_pattern">Area: %1$d sq. ft.</string>
+    <string name="bedrooms_pattern">Bedrooms: %1$d</string>
+    <string name="bathrooms_pattern">Bathrooms: %1$d</string>
+    <string name="accommodation_pattern">Accommodation Type: %1$s</string>
+    <string name="people_sharing_pattern">People Sharing: %1$d</string>
+    <string name="available_from_pattern">Available From: %1$s</string>
+    <string name="lease_duration_pattern">Lease Duration: %1$s</string>
+    <string name="smoking_preference_pattern">Smoking Preference: %1$s</string>
+    <string name="drinking_preference_pattern">Drinking Preference: %1$s</string>
+    <string name="has_smoker_pattern">Has Smoker: %1$s</string>
+    <string name="has_drinker_pattern">Has Drinker: %1$s</string>
+    <string name="city_pattern">City: %1$s</string>
+    <string name="food_preference_pattern">Food Preference: %1$s</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="logout">Logout</string>
 </resources>

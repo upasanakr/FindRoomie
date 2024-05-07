@@ -53,7 +53,8 @@ public class RegisterActivity extends AppCompatActivity {
             String name = editTextName.getText().toString();
             String email = editTextEmail.getText().toString();
             String phoneNumber = editTextPhoneNumber.getText().toString();
-            String userType = spinnerUserType.getSelectedItem().toString();
+            String text = spinnerUserType.getSelectedItem().toString();
+            String userType = (text.equals("Looking for a Room")) ? "seeker" : "lister";
             String password = editTextPassword.getText().toString();
 
             if (!validateForm(name, email, phoneNumber, password)) {
