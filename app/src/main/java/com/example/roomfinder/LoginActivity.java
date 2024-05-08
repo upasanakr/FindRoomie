@@ -143,7 +143,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(LoginActivity.this, "Invalid user type", Toast.LENGTH_SHORT).show();
             return;
         }
-        intent.putExtra("user_id", userId);
+        intent.putExtra("USER_ID", String.valueOf(userId));
         startActivity(intent);
         finish();
     }

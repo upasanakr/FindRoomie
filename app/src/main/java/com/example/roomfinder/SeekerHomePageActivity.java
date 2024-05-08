@@ -54,7 +54,7 @@ public class SeekerHomePageActivity extends AppCompatActivity {
         recyclerViewMatched = findViewById(R.id.recycler_view_matched);
         recyclerViewMatched.setLayoutManager(new LinearLayoutManager(this));
 
-        int userId = getIntent().getIntExtra("user_id", -1);
+        String userId = getIntent().getStringExtra("USER_ID");
         String apiUrl = "http://54.175.51.201:8080/" + userId + "/recommend";
 
         executorService = Executors.newSingleThreadExecutor();

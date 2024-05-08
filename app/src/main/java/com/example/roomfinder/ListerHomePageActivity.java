@@ -43,7 +43,7 @@ public class ListerHomePageActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        int userId = getIntent().getIntExtra("user_id", -1);
+        String userId = getIntent().getStringExtra("USER_ID");
         String apiUrl = "http://54.175.51.201:8080/" + userId + "/listMatches";
         fetchSeekers(apiUrl);
     }
