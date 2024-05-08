@@ -3,6 +3,7 @@ package com.example.roomfinder;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Patterns;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -19,9 +20,14 @@ import com.example.roomfinder.SeekerPreferenceActivity;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Scanner;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -53,8 +59,7 @@ public class RegisterActivity extends AppCompatActivity {
             String name = editTextName.getText().toString();
             String email = editTextEmail.getText().toString();
             String phoneNumber = editTextPhoneNumber.getText().toString();
-            String text = spinnerUserType.getSelectedItem().toString();
-            String userType = (text.equals("Looking for a Room")) ? "seeker" : "lister";
+            String userType = spinnerUserType.getSelectedItem().toString().equals("Looking for a Room") ? "seeker" : "lister";
             String password = editTextPassword.getText().toString();
 
             if (!validateForm(name, email, phoneNumber, password)) {
@@ -75,9 +80,11 @@ public class RegisterActivity extends AppCompatActivity {
             new Thread(() -> {
                 try {
                     String response = sendPostRequest("https://p9r6bc5kf9.execute-api.us-east-1.amazonaws.com/api/register", postData.toString());
+                    JSONObject responseObject = new JSONObject(response);
+                    String userId = responseObject.optString("userId");  // Assuming the ID is returned as "userId"
                     runOnUiThread(() -> {
-                        Toast.makeText(RegisterActivity.this, response, Toast.LENGTH_SHORT).show();
-                        navigateToHomePage(userType);
+                        Toast.makeText(RegisterActivity.this, "User registered successfully", Toast.LENGTH_SHORT).show();
+                        navigateToHomePage(userType, userId);
                     });
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -95,20 +102,36 @@ public class RegisterActivity extends AppCompatActivity {
 
         // Send post request
         con.setDoOutput(true);
-        DataOutputStream wr = new DataOutputStream(con.getOutputStream());
-        wr.writeBytes(postData);
-        wr.flush();
-        wr.close();
+        try (DataOutputStream wr = new DataOutputStream(con.getOutputStream())) {
+            wr.writeBytes(postData);
+            wr.flush();
+        }
 
         int responseCode = con.getResponseCode();
+        InputStream inputStream = (responseCode == HttpURLConnection.HTTP_OK) ? con.getInputStream() : con.getErrorStream();
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+        StringBuilder response = new StringBuilder();
+        String line;
+        while ((line = reader.readLine()) != null) {
+            response.append(line);
+        }
+        reader.close();
+
+        // Log full response details
+        Log.d("HTTP Status Code", String.valueOf(responseCode));
+        Log.d("HTTP Headers", con.getHeaderFields().toString());
+        Log.d("HTTP Response Body", response.toString());
+
         if (responseCode == HttpURLConnection.HTTP_OK) {
-            return "User registered successfully";
+            return response.toString();
         } else {
-            return "Error registering user";
+            throw new IOException("HTTP Error Response: " + responseCode + " - " + response.toString());
         }
     }
 
-    private void navigateToHomePage(String userType) {
+
+    private void navigateToHomePage(String userType, String userId) {
         Intent intent = null;
 
         if ("seeker".equals(userType)) {
@@ -118,6 +141,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         if (intent != null) {
+            intent.putExtra("USER_ID", userId);
             startActivity(intent);
             finish();
         } else {
