@@ -1,0 +1,481 @@
+preference_id,user_id,accommodation_type,no_of_people_sharing,veg_status,start_date,max_budget,landmark_preferences,no_of_bedrooms,no_of_bathrooms,apartment_preference,city_preference,smoking_preference,drinking_preference,smoker,drinker
+1,1,single,,any,2024-02-25,868.61,near to bus stop,3,1,pet-friendly,San Jose,no,any,yes,yes
+2,2,single,,non-veg,2025-01-12,935.23,near to bus stop,3,2,pool access,San Jose,any,any,yes,no
+3,3,single,,any,2025-04-04,2328.52,near to grocery store,2,2,,San Francisco,any,any,yes,yes
+4,4,single,,any,2024-05-16,853.37,,1,2,,San Jose,any,any,yes,no
+5,6,single,,any,2024-06-10,1631.2,,1,2,gym facility,San Jose,no,any,no,yes
+6,8,single,,veg,2025-01-22,748.35,near to grocery store,4,2,,San Jose,any,yes,yes,yes
+7,13,sharing,4,any,2023-06-20,479.43,near to grocery store,1,1,,San Francisco,any,no,no,yes
+8,14,single,,any,2024-11-28,2826.5,near to bus stop,1,2,,San Jose,any,yes,yes,yes
+9,18,sharing,5,non-veg,2023-10-05,736.28,,3,1,,San Jose,any,any,yes,no
+10,21,sharing,2,veg,2023-05-15,2670.39,near to bus stop,3,1,gym facility,San Jose,any,any,yes,yes
+11,24,single,,any,2023-07-18,1429.92,near to bus stop,4,2,,San Jose,no,any,no,no
+12,25,single,,veg,2024-12-08,2663.26,near to bus stop,2,2,,San Francisco,any,no,no,yes
+13,26,sharing,2,non-veg,2025-02-01,687.13,,4,2,pool access,San Jose,any,any,yes,no
+14,28,sharing,4,any,2025-02-08,1338.77,near to bus stop,2,2,gym facility,San Jose,no,yes,no,yes
+15,29,sharing,4,any,2024-09-23,1861.94,near to university,2,2,gated community,San Jose,any,any,yes,no
+16,32,single,,veg,2024-08-31,1026.74,near to university,4,1,pet-friendly,San Francisco,yes,no,no,no
+17,33,sharing,3,any,2023-05-13,1836.29,,1,2,pet-friendly,San Jose,any,any,no,no
+18,34,single,,any,2023-06-29,2913.64,near to grocery store,4,2,,San Jose,any,any,no,yes
+19,35,single,,any,2023-07-20,550.05,,1,1,pet-friendly,San Jose,any,any,yes,yes
+20,40,single,,any,2024-04-25,2185.9,near to university,2,1,,San Jose,no,any,no,no
+21,42,sharing,5,non-veg,2023-09-03,708.81,near to school,3,2,,San Francisco,any,no,yes,no
+22,44,sharing,4,any,2023-08-27,1561.51,,2,2,,San Jose,any,any,no,yes
+23,45,sharing,5,any,2024-08-13,839.41,near to grocery store,2,2,pet-friendly,San Francisco,no,any,yes,yes
+24,46,single,,non-veg,2024-05-14,1317.01,near to grocery store,1,1,gated community,San Jose,no,any,yes,yes
+25,48,single,,any,2023-05-24,1479.4,,3,1,gym facility,San Francisco,any,any,yes,yes
+26,52,sharing,3,any,2025-03-05,1466.31,,4,1,,San Jose,no,any,no,yes
+27,53,sharing,2,non-veg,2023-08-24,987.89,near to university,1,2,apartment with parking,San Jose,yes,no,no,yes
+28,55,single,,any,2024-10-30,918.51,near to university,4,1,gated community,San Francisco,any,no,yes,yes
+29,57,sharing,2,non-veg,2025-02-27,1726.87,,2,1,pet-friendly,San Jose,any,any,no,no
+30,58,single,,any,2024-05-16,615.89,near to bus stop,4,2,apartment with parking,San Jose,no,any,yes,no
+31,60,sharing,5,non-veg,2023-09-10,1107.7,near to school,2,2,apartment with parking,San Francisco,any,any,yes,no
+32,61,sharing,5,any,2024-02-06,1108.1,near to school,2,2,pet-friendly,San Francisco,no,any,yes,yes
+33,62,single,,any,2023-11-24,337.4,near to school,4,1,apartment with parking,San Francisco,any,any,yes,no
+34,64,single,,any,2025-01-30,1714.84,,4,2,gym facility,San Jose,no,any,no,yes
+35,72,sharing,5,any,2025-02-15,1489.81,near to bus stop,4,2,,San Francisco,any,no,yes,yes
+36,74,single,,any,2025-04-04,1102.93,,4,1,pool access,San Francisco,any,any,no,no
+37,78,sharing,2,any,2023-09-16,940.75,near to bus stop,2,1,gated community,San Jose,no,no,no,no
+38,79,sharing,5,any,2024-04-26,1432.39,,2,2,gated community,San Jose,any,any,no,yes
+39,81,single,,non-veg,2025-03-19,382.32,near to bus stop,1,2,pet-friendly,San Francisco,any,any,yes,no
+40,87,single,,veg,2023-06-14,2664.54,,2,1,,San Francisco,any,any,no,no
+41,89,sharing,4,any,2024-11-10,1888.78,near to school,4,2,,San Jose,yes,any,no,yes
+42,91,sharing,4,any,2023-05-09,540.19,,4,1,gym facility,San Francisco,any,any,yes,yes
+43,92,sharing,3,any,2024-02-07,1178.05,near to grocery store,4,1,pet-friendly,San Francisco,any,any,no,yes
+44,93,sharing,3,any,2025-04-21,860.11,near to bus stop,4,1,pet-friendly,San Francisco,yes,any,no,no
+45,94,sharing,5,non-veg,2023-11-11,2890.42,,2,1,,San Jose,any,any,no,no
+46,95,single,,non-veg,2024-07-29,1023.79,near to university,3,1,apartment with parking,San Francisco,any,any,yes,no
+47,96,single,,any,2024-01-24,1235.79,near to school,2,1,apartment with parking,San Francisco,any,no,no,no
+48,97,sharing,2,any,2024-04-28,365.67,near to grocery store,3,1,pool access,San Jose,any,no,no,yes
+49,98,single,,any,2023-12-07,693.45,near to school,4,2,,San Francisco,any,yes,no,no
+50,100,sharing,4,any,2024-12-15,666.16,,1,2,gated community,San Jose,yes,any,no,no
+51,101,sharing,2,any,2024-01-27,367.27,,3,1,pet-friendly,San Francisco,no,any,yes,yes
+52,102,single,,non-veg,2023-10-19,2685.22,near to university,2,2,pool access,San Jose,any,any,yes,no
+53,105,sharing,3,any,2024-01-07,1627.99,near to bus stop,3,1,gym facility,San Jose,yes,no,yes,no
+54,108,sharing,2,non-veg,2024-02-13,1248.09,near to bus stop,4,2,,San Jose,any,any,no,no
+55,111,sharing,2,any,2023-10-02,2708.49,near to school,4,2,pet-friendly,San Jose,any,no,no,no
+56,118,sharing,5,non-veg,2024-03-22,1052.08,near to university,1,1,pet-friendly,San Francisco,any,no,yes,yes
+57,119,single,,veg,2023-08-18,1574.07,near to bus stop,1,2,,San Jose,any,any,no,yes
+58,121,sharing,2,non-veg,2024-05-06,563.56,near to grocery store,1,2,pet-friendly,San Jose,no,no,no,no
+59,128,single,,veg,2023-06-29,514.53,near to school,2,2,,San Jose,no,any,yes,no
+60,130,sharing,2,any,2023-08-14,328.65,,2,1,gated community,San Jose,any,yes,no,yes
+61,131,sharing,3,non-veg,2025-05-02,379.7,near to bus stop,3,2,gated community,San Jose,any,any,no,yes
+62,133,sharing,4,any,2023-12-25,319.47,,4,1,pool access,San Francisco,no,any,no,no
+63,137,single,,veg,2024-10-27,1736.18,near to bus stop,2,1,pet-friendly,San Francisco,yes,any,no,no
+64,139,single,,any,2024-10-05,2400.07,,3,2,,San Jose,yes,yes,yes,yes
+65,140,single,,any,2023-09-10,1756.6,,1,1,,San Jose,no,no,no,yes
+66,144,single,,any,2023-12-25,1144.74,near to bus stop,3,2,gated community,San Francisco,any,any,yes,no
+67,147,sharing,5,any,2023-08-13,1808.15,near to grocery store,4,1,,San Francisco,any,any,yes,yes
+68,150,single,,any,2024-09-07,2980.76,,1,1,apartment with parking,San Jose,any,any,yes,no
+69,151,single,,any,2024-06-19,563.42,near to university,2,1,apartment with parking,San Francisco,any,any,yes,yes
+70,154,sharing,4,any,2023-12-27,488.8,,1,2,apartment with parking,San Jose,any,any,no,no
+71,155,sharing,3,any,2024-07-15,805.81,,2,1,gym facility,San Jose,any,no,no,yes
+72,157,single,,any,2023-10-30,1711.13,,1,1,pet-friendly,San Francisco,any,any,no,no
+73,158,single,,any,2024-09-30,2759.92,near to bus stop,3,1,apartment with parking,San Jose,any,no,no,yes
+74,159,sharing,3,non-veg,2024-03-20,2312.96,,4,2,pet-friendly,San Francisco,any,yes,no,yes
+75,167,single,,non-veg,2024-01-06,1111.16,near to school,1,2,,San Francisco,any,any,yes,yes
+76,168,sharing,5,any,2023-07-02,970.5,near to bus stop,4,2,gym facility,San Francisco,any,yes,yes,no
+77,171,single,,any,2024-03-31,1267.79,near to university,3,1,gym facility,San Jose,no,any,yes,yes
+78,172,single,,non-veg,2024-04-19,2869.75,,3,2,gated community,San Francisco,any,yes,yes,yes
+79,177,single,,any,2024-10-17,1446.72,,1,2,,San Francisco,yes,yes,no,yes
+80,178,sharing,2,any,2023-10-21,2860.35,near to university,3,2,apartment with parking,San Francisco,any,any,yes,yes
+81,179,single,,any,2024-12-15,752.53,,1,2,,San Francisco,any,any,no,yes
+82,182,sharing,3,any,2025-02-02,1533.49,near to grocery store,2,2,gym facility,San Jose,any,any,no,yes
+83,183,single,,any,2023-11-25,2714.87,,4,1,apartment with parking,San Jose,yes,any,no,no
+84,184,single,,veg,2023-11-02,1693.91,,3,2,apartment with parking,San Francisco,no,any,yes,no
+85,185,single,,any,2024-12-30,1322.54,near to school,4,2,pool access,San Jose,any,any,no,yes
+86,187,single,,any,2024-10-29,1488.82,near to school,2,1,,San Jose,any,any,no,no
+87,188,sharing,5,any,2023-09-02,1533.59,near to university,3,2,,San Francisco,any,yes,yes,yes
+88,189,sharing,4,non-veg,2024-04-20,2702.3,near to grocery store,4,1,gym facility,San Jose,any,any,no,no
+89,190,sharing,5,any,2024-11-02,2467.23,near to school,1,1,,San Jose,no,any,no,yes
+90,192,single,,veg,2025-04-06,2045.13,near to grocery store,4,1,apartment with parking,San Francisco,no,any,yes,no
+91,193,single,,any,2024-07-25,1661.73,,1,2,gym facility,San Jose,any,any,yes,no
+92,198,single,,any,2023-09-22,2187.16,near to bus stop,2,1,gated community,San Jose,any,yes,no,no
+93,202,single,,veg,2024-05-18,2707.51,near to school,4,2,gym facility,San Francisco,any,any,no,yes
+94,203,single,,veg,2025-04-05,2632.72,near to university,2,2,gated community,San Jose,yes,any,yes,no
+95,205,single,,veg,2023-12-21,1694.0,near to bus stop,3,1,gated community,San Jose,any,any,no,no
+96,206,sharing,4,any,2023-08-30,1154.09,near to university,3,2,gated community,San Francisco,any,any,yes,yes
+97,209,sharing,5,non-veg,2025-02-22,2900.27,near to bus stop,1,2,gated community,San Jose,yes,any,yes,no
+98,210,single,,non-veg,2024-08-01,1293.83,near to school,3,1,gym facility,San Jose,any,yes,yes,no
+99,211,sharing,2,any,2024-05-18,2202.82,,2,2,,San Francisco,any,any,yes,yes
+100,212,sharing,3,any,2024-05-24,886.28,near to school,2,1,,San Francisco,any,any,yes,no
+101,213,sharing,4,any,2024-09-14,2220.29,near to university,4,1,,San Francisco,yes,any,yes,yes
+102,214,sharing,5,any,2023-06-07,2345.84,near to university,4,2,gated community,San Jose,any,yes,yes,yes
+103,216,sharing,3,any,2024-05-10,750.92,,4,2,,San Francisco,any,any,yes,yes
+104,217,single,,any,2024-01-21,999.24,near to grocery store,1,1,apartment with parking,San Jose,yes,any,no,no
+105,218,sharing,2,any,2023-10-27,1198.57,near to university,2,2,gated community,San Francisco,yes,any,no,no
+106,225,single,,any,2023-05-22,2567.8,near to bus stop,4,1,,San Jose,any,any,yes,no
+107,229,single,,any,2025-04-16,1025.62,near to grocery store,2,1,pet-friendly,San Jose,yes,yes,yes,yes
+108,232,sharing,4,any,2023-09-26,1459.12,,1,2,gym facility,San Jose,any,any,no,yes
+109,233,single,,non-veg,2023-11-15,2438.01,near to bus stop,1,1,,San Jose,any,yes,yes,yes
+110,235,sharing,3,any,2024-01-20,2253.29,near to grocery store,2,1,pet-friendly,San Francisco,any,any,yes,no
+111,237,single,,any,2024-03-30,1677.36,,2,2,apartment with parking,San Jose,any,yes,yes,no
+112,242,sharing,3,non-veg,2023-12-11,838.8,near to grocery store,4,2,apartment with parking,San Jose,any,any,no,yes
+113,243,sharing,5,non-veg,2024-01-17,1328.95,near to school,2,2,,San Francisco,any,yes,yes,no
+114,244,sharing,2,any,2024-11-27,1836.77,near to school,1,1,apartment with parking,San Francisco,yes,no,no,yes
+115,246,single,,any,2024-02-18,1045.22,,1,2,,San Jose,any,any,no,yes
+116,247,sharing,3,any,2024-05-21,871.71,near to bus stop,4,2,,San Francisco,any,any,yes,no
+117,248,single,,any,2024-10-06,746.25,near to university,4,1,apartment with parking,San Jose,no,any,yes,yes
+118,249,sharing,4,any,2024-04-03,1356.99,near to bus stop,4,2,,San Jose,any,any,yes,yes
+119,252,sharing,5,non-veg,2025-02-12,2824.28,near to university,2,1,pet-friendly,San Francisco,no,no,no,yes
+120,253,single,,non-veg,2024-04-02,636.92,,3,2,,San Francisco,any,any,yes,no
+121,255,sharing,4,any,2023-10-26,2903.66,,4,1,pool access,San Francisco,any,any,no,no
+122,257,sharing,5,any,2024-09-29,908.32,near to school,2,1,apartment with parking,San Jose,any,any,yes,no
+123,258,sharing,4,any,2025-04-10,1222.2,near to school,1,1,gym facility,San Jose,any,any,yes,no
+124,265,sharing,5,any,2024-02-05,2371.5,near to university,3,1,,San Francisco,any,yes,no,yes
+125,271,sharing,2,any,2024-04-27,1186.4,near to school,2,2,gym facility,San Francisco,any,any,yes,yes
+126,273,single,,any,2024-11-17,691.58,,2,2,pet-friendly,San Francisco,yes,any,yes,no
+127,274,single,,veg,2025-04-09,2032.35,,2,2,,San Francisco,no,any,yes,no
+128,279,sharing,5,veg,2023-07-30,847.94,near to grocery store,3,1,,San Jose,any,any,yes,yes
+129,281,single,,any,2024-03-22,2578.76,near to university,3,2,apartment with parking,San Francisco,any,any,yes,yes
+130,282,sharing,4,any,2025-03-31,791.22,,4,2,pool access,San Jose,any,yes,no,no
+131,284,single,,any,2023-12-19,2353.55,near to grocery store,2,1,,San Francisco,any,any,no,yes
+132,287,single,,veg,2025-04-14,2790.89,near to school,1,2,gated community,San Jose,any,any,yes,no
+133,288,sharing,4,veg,2023-06-26,1463.85,near to school,1,2,gym facility,San Jose,no,yes,no,no
+134,289,single,,any,2024-06-13,1642.8,,2,1,pool access,San Francisco,any,any,no,yes
+135,291,sharing,5,veg,2025-01-19,1798.11,near to grocery store,4,1,gated community,San Francisco,any,any,yes,no
+136,294,sharing,5,non-veg,2024-03-30,1826.36,near to university,1,1,pet-friendly,San Jose,any,any,yes,yes
+137,296,single,,non-veg,2024-09-26,1250.74,near to university,4,2,apartment with parking,San Jose,any,any,no,yes
+138,297,single,,non-veg,2024-10-23,2839.42,near to university,3,2,gym facility,San Jose,any,no,yes,no
+139,299,sharing,4,any,2023-05-22,1391.75,near to university,2,2,,San Francisco,any,no,yes,no
+140,301,single,,any,2023-08-04,1067.16,near to bus stop,2,1,apartment with parking,San Francisco,yes,any,no,no
+141,302,single,,non-veg,2023-07-25,1302.24,,4,1,pool access,San Jose,yes,any,yes,yes
+142,303,single,,any,2023-09-12,1882.26,,3,2,,San Jose,no,any,no,yes
+143,304,single,,any,2023-06-04,2890.65,near to school,4,2,apartment with parking,San Jose,any,any,yes,no
+144,307,sharing,2,veg,2024-12-14,1954.09,,4,2,pet-friendly,San Francisco,any,any,yes,no
+145,310,sharing,2,non-veg,2025-03-24,316.42,near to grocery store,1,2,pet-friendly,San Francisco,any,any,yes,no
+146,313,single,,any,2024-12-27,1264.06,near to school,4,2,gated community,San Jose,any,any,yes,yes
+147,316,single,,veg,2025-02-15,627.53,,2,1,apartment with parking,San Francisco,yes,any,yes,yes
+148,318,single,,non-veg,2024-12-27,1995.2,near to university,3,1,apartment with parking,San Jose,no,no,yes,yes
+149,323,single,,veg,2023-08-04,1927.79,near to grocery store,3,2,apartment with parking,San Francisco,any,yes,yes,yes
+150,325,sharing,3,any,2024-05-15,2032.7,near to school,3,2,apartment with parking,San Francisco,any,any,no,yes
+151,326,single,,any,2024-05-08,1132.98,near to university,3,2,gated community,San Jose,any,any,yes,no
+152,329,sharing,4,any,2023-05-25,2472.96,near to grocery store,2,2,,San Jose,no,any,no,no
+153,330,sharing,2,any,2023-07-08,2479.06,,2,2,gym facility,San Jose,any,any,yes,yes
+154,334,sharing,5,any,2024-01-27,2697.75,near to grocery store,1,1,,San Jose,yes,any,no,no
+155,335,sharing,2,any,2024-09-10,2095.84,near to bus stop,4,1,,San Francisco,any,any,no,yes
+156,336,sharing,2,any,2025-02-09,2553.1,,4,2,gym facility,San Jose,yes,any,yes,no
+157,338,single,,any,2023-09-03,362.96,,1,1,,San Francisco,yes,no,yes,no
+158,339,single,,veg,2024-09-16,2027.99,near to school,3,1,pool access,San Francisco,any,any,no,yes
+159,340,sharing,3,non-veg,2024-01-13,1659.53,near to grocery store,2,2,,San Jose,any,no,yes,no
+160,341,sharing,2,any,2024-11-16,2927.63,near to bus stop,4,2,gym facility,San Francisco,no,any,yes,no
+161,343,single,,any,2024-07-08,767.77,near to bus stop,3,1,apartment with parking,San Francisco,yes,no,yes,yes
+162,345,sharing,2,any,2023-06-23,951.97,near to university,2,2,gated community,San Jose,any,any,yes,yes
+163,346,sharing,5,veg,2024-07-06,1989.77,,3,1,,San Jose,yes,any,yes,yes
+164,349,sharing,2,any,2025-04-01,519.89,,4,2,pet-friendly,San Jose,any,no,no,yes
+165,350,single,,any,2024-07-04,2715.97,near to university,3,1,gated community,San Jose,no,yes,no,yes
+166,351,single,,any,2024-05-30,1028.1,near to school,2,1,apartment with parking,San Jose,any,any,yes,no
+167,352,single,,any,2023-11-29,2902.48,near to grocery store,3,2,,San Francisco,any,any,yes,yes
+168,354,single,,any,2024-12-02,912.44,near to university,3,2,,San Francisco,no,yes,yes,no
+169,361,single,,any,2024-07-29,465.77,near to school,2,1,pool access,San Francisco,yes,any,no,yes
+170,364,sharing,3,any,2025-01-20,1151.84,near to school,1,2,gated community,San Jose,any,no,no,no
+171,367,single,,any,2024-12-04,501.03,near to bus stop,4,2,apartment with parking,San Francisco,any,any,no,yes
+172,368,single,,veg,2025-03-04,472.52,near to university,1,2,pet-friendly,San Jose,any,any,yes,no
+173,371,single,,veg,2025-01-23,2262.71,,3,1,pet-friendly,San Francisco,any,any,yes,no
+174,372,single,,any,2024-11-19,2720.91,near to university,1,2,pet-friendly,San Jose,any,any,yes,yes
+175,376,single,,non-veg,2024-10-29,1060.95,near to university,4,2,gym facility,San Jose,yes,any,yes,yes
+176,377,sharing,3,any,2024-11-23,2444.33,near to bus stop,2,2,gym facility,San Jose,any,any,yes,yes
+177,378,sharing,4,non-veg,2024-12-10,1464.43,near to university,4,2,pool access,San Jose,any,any,yes,yes
+178,380,single,,any,2023-10-24,915.66,near to bus stop,2,1,apartment with parking,San Jose,any,any,yes,yes
+179,381,single,,veg,2023-10-24,2286.65,,1,1,gym facility,San Jose,no,any,yes,no
+180,382,sharing,3,any,2024-06-24,1988.77,near to university,3,1,gated community,San Jose,yes,any,no,yes
+181,384,sharing,4,non-veg,2024-06-13,1583.21,,2,1,,San Jose,any,no,yes,no
+182,386,sharing,3,non-veg,2023-05-29,1829.92,,3,1,gym facility,San Francisco,any,any,yes,no
+183,390,single,,any,2024-08-14,1416.83,,3,2,,San Jose,any,yes,no,yes
+184,392,single,,any,2024-02-25,1751.94,near to school,3,2,pet-friendly,San Jose,yes,any,yes,no
+185,396,single,,any,2023-07-30,2395.56,,4,2,gated community,San Francisco,any,any,yes,yes
+186,398,single,,any,2024-04-23,2505.71,near to university,4,1,pool access,San Francisco,any,any,yes,yes
+187,399,sharing,4,veg,2024-10-31,340.94,,4,2,,San Jose,any,any,no,no
+188,402,single,,any,2024-10-30,618.28,near to university,4,2,apartment with parking,San Jose,any,any,yes,no
+189,404,sharing,3,any,2023-09-13,1691.34,,4,1,gym facility,San Jose,any,any,yes,no
+190,409,sharing,5,any,2024-08-24,2327.65,,3,1,gated community,San Francisco,any,yes,no,no
+191,410,single,,non-veg,2024-01-19,1432.17,near to school,4,1,,San Francisco,yes,no,yes,yes
+192,411,single,,any,2023-09-02,476.91,near to grocery store,4,2,gym facility,San Jose,any,any,yes,yes
+193,412,sharing,2,any,2024-08-16,1425.24,near to school,4,1,apartment with parking,San Francisco,any,any,yes,no
+194,415,single,,any,2023-08-08,1622.95,,3,1,apartment with parking,San Jose,any,no,yes,yes
+195,416,sharing,5,any,2023-05-26,2127.17,near to school,1,1,,San Jose,any,any,yes,yes
+196,420,sharing,5,veg,2025-01-20,2479.07,near to grocery store,3,1,,San Francisco,any,yes,no,yes
+197,425,sharing,4,veg,2024-11-12,2710.64,near to grocery store,2,2,pet-friendly,San Jose,yes,any,no,no
+198,426,sharing,2,any,2024-01-15,2321.46,near to bus stop,2,1,,San Francisco,any,no,yes,no
+199,427,sharing,5,non-veg,2024-07-22,2834.89,near to university,3,1,apartment with parking,San Francisco,any,any,no,yes
+200,428,single,,non-veg,2024-05-23,2417.38,near to school,1,1,gym facility,San Francisco,yes,any,no,yes
+201,429,single,,any,2025-04-17,826.1,near to bus stop,3,2,,San Francisco,yes,yes,yes,no
+202,430,single,,non-veg,2023-12-07,2906.42,,3,2,gym facility,San Jose,any,any,no,yes
+203,431,single,,any,2024-05-03,2211.62,,3,1,gated community,San Francisco,any,any,no,no
+204,433,single,,veg,2024-09-03,2458.03,near to university,3,1,pet-friendly,San Jose,any,any,no,yes
+205,436,single,,any,2025-01-19,2398.96,,1,2,apartment with parking,San Francisco,any,no,yes,no
+206,438,single,,any,2023-08-21,2421.91,,2,2,gym facility,San Jose,any,yes,yes,no
+207,439,single,,any,2025-01-05,2752.2,,4,1,gated community,San Jose,any,any,yes,no
+208,440,single,,any,2023-11-22,2341.17,,3,2,gym facility,San Francisco,no,any,yes,no
+209,441,sharing,2,any,2023-05-29,1123.37,,1,1,pool access,San Jose,any,any,no,yes
+210,442,sharing,2,any,2024-03-21,1756.93,,2,1,,San Francisco,any,any,no,no
+211,444,single,,any,2024-01-14,2839.42,near to university,1,1,gated community,San Francisco,any,any,no,yes
+212,445,sharing,4,any,2023-12-29,2659.75,,1,2,apartment with parking,San Jose,yes,no,yes,no
+213,447,sharing,2,non-veg,2024-09-08,1465.17,near to bus stop,4,1,gym facility,San Jose,any,any,no,no
+214,448,single,,veg,2024-04-27,865.36,,1,1,pet-friendly,San Francisco,any,any,no,no
+215,449,sharing,2,any,2024-12-09,2693.96,near to bus stop,3,1,gated community,San Jose,any,any,no,no
+216,450,sharing,2,any,2023-06-08,2429.2,near to university,3,2,gated community,San Jose,any,any,yes,yes
+217,451,single,,any,2023-10-27,1508.02,,4,1,,San Francisco,any,any,yes,yes
+218,452,sharing,2,non-veg,2023-06-08,1900.19,near to grocery store,1,1,pool access,San Jose,any,any,no,yes
+219,455,sharing,4,veg,2025-02-20,2374.69,near to grocery store,2,1,gym facility,San Jose,no,any,no,yes
+220,456,sharing,2,veg,2025-01-04,473.57,near to bus stop,1,2,gym facility,San Jose,any,no,no,no
+221,457,sharing,2,non-veg,2024-10-11,772.05,,4,1,pool access,San Francisco,any,any,yes,no
+222,460,single,,non-veg,2024-04-24,1004.54,,3,2,gated community,San Francisco,any,any,yes,yes
+223,461,sharing,2,veg,2024-10-31,2585.31,,1,2,,San Jose,any,any,yes,yes
+224,464,single,,any,2023-11-24,1608.03,near to university,3,2,apartment with parking,San Jose,yes,no,no,no
+225,468,single,,any,2023-09-23,1270.51,,3,2,pool access,San Jose,any,yes,yes,yes
+226,470,sharing,4,any,2023-09-19,1813.5,near to university,2,1,,San Jose,any,any,yes,no
+227,471,sharing,2,any,2024-01-30,1568.1,near to bus stop,3,1,pool access,San Jose,no,no,no,yes
+228,473,sharing,4,veg,2024-08-28,2785.68,near to bus stop,2,1,pool access,San Francisco,no,any,no,yes
+229,475,sharing,4,any,2024-09-14,630.03,near to bus stop,3,2,apartment with parking,San Jose,no,any,yes,no
+230,477,single,,any,2024-09-01,1925.35,near to grocery store,4,1,,San Jose,no,any,yes,no
+231,479,single,,any,2025-01-05,2211.57,,3,1,gated community,San Francisco,any,no,yes,no
+232,480,single,,veg,2025-04-28,2913.51,near to school,4,2,apartment with parking,San Francisco,any,no,no,no
+233,481,sharing,5,any,2024-07-20,345.95,near to grocery store,3,1,gated community,San Jose,any,any,no,no
+234,482,sharing,5,veg,2025-03-20,434.97,near to school,1,2,gated community,San Francisco,any,no,yes,yes
+235,485,sharing,4,any,2023-09-11,2651.33,near to school,1,2,pet-friendly,San Jose,yes,any,yes,yes
+236,487,sharing,3,any,2024-07-17,2126.87,,4,2,pool access,San Jose,any,yes,yes,yes
+237,488,sharing,5,veg,2023-06-25,693.91,near to grocery store,4,2,pool access,San Francisco,any,any,no,yes
+238,491,single,,any,2024-06-21,2184.02,near to university,2,1,,San Jose,yes,any,yes,yes
+239,492,sharing,4,any,2024-04-13,606.42,near to grocery store,1,1,,San Jose,no,yes,yes,no
+240,493,sharing,3,veg,2024-01-14,894.14,,4,1,gym facility,San Jose,any,any,no,yes
+241,495,sharing,4,veg,2023-09-11,2104.37,near to school,1,1,,San Jose,any,no,no,no
+242,496,sharing,5,any,2024-06-26,1376.06,near to university,3,1,gym facility,San Francisco,any,any,no,no
+243,497,single,,veg,2024-02-04,1917.08,near to university,1,1,pool access,San Francisco,yes,any,no,yes
+244,498,sharing,5,any,2024-03-23,2764.36,,2,2,pet-friendly,San Francisco,no,yes,yes,yes
+245,499,sharing,4,any,2024-01-20,2426.3,near to bus stop,2,2,pet-friendly,San Francisco,any,no,no,yes
+246,500,single,,any,2025-03-14,417.51,,3,2,gated community,San Jose,any,any,yes,yes
+247,501,single,,any,2024-06-22,1618.03,,1,2,,San Francisco,any,any,yes,no
+248,502,sharing,2,any,2024-10-25,1388.76,,4,2,pet-friendly,San Jose,any,any,no,no
+249,507,single,,any,2023-09-09,2657.35,near to grocery store,1,1,apartment with parking,San Francisco,no,any,yes,yes
+250,511,sharing,3,any,2025-03-05,2058.8,near to bus stop,1,2,pool access,San Francisco,no,any,no,yes
+251,516,single,,any,2024-10-29,2289.22,near to bus stop,2,2,gated community,San Jose,no,any,no,yes
+252,518,single,,veg,2024-08-07,1792.82,,2,2,,San Francisco,any,any,yes,yes
+253,522,single,,any,2024-01-06,392.99,near to school,3,2,,San Jose,any,any,no,no
+254,525,sharing,2,veg,2025-02-24,2880.29,,4,2,pool access,San Jose,any,any,yes,no
+255,529,sharing,2,any,2024-01-11,2227.84,near to school,3,2,apartment with parking,San Francisco,any,any,yes,yes
+256,531,sharing,5,any,2023-05-18,340.86,near to university,4,2,pet-friendly,San Francisco,no,yes,yes,yes
+257,532,sharing,4,any,2025-04-03,1243.44,near to school,2,1,,San Francisco,any,any,yes,yes
+258,535,sharing,5,any,2023-10-15,1823.98,,2,1,pet-friendly,San Jose,no,any,yes,no
+259,536,sharing,3,veg,2025-04-19,960.03,,3,2,,San Francisco,any,any,yes,yes
+260,538,sharing,5,any,2024-10-24,2584.88,near to school,4,2,gated community,San Jose,any,yes,no,yes
+261,542,sharing,2,any,2025-04-23,2491.87,,1,1,pet-friendly,San Jose,yes,no,yes,no
+262,543,single,,veg,2023-11-02,2378.78,near to school,1,2,gym facility,San Francisco,any,any,yes,no
+263,544,single,,any,2023-07-24,383.57,,3,2,gated community,San Jose,any,any,no,yes
+264,548,sharing,5,non-veg,2024-10-08,2621.57,near to bus stop,1,1,,San Francisco,no,any,yes,no
+265,549,sharing,3,any,2024-01-02,2470.71,near to university,3,1,apartment with parking,San Jose,any,no,yes,yes
+266,552,single,,any,2023-12-04,2245.23,,2,1,gated community,San Francisco,any,any,yes,no
+267,553,sharing,3,any,2023-12-22,2723.83,near to grocery store,2,2,,San Jose,no,no,no,no
+268,555,sharing,5,non-veg,2024-08-23,736.93,near to school,4,1,pet-friendly,San Francisco,any,yes,no,no
+269,557,sharing,5,any,2024-01-28,405.94,near to university,3,2,apartment with parking,San Jose,no,any,yes,no
+270,559,sharing,3,non-veg,2024-10-18,2901.61,near to school,4,1,gated community,San Francisco,any,any,yes,yes
+271,560,single,,any,2024-03-04,2319.43,near to school,1,2,apartment with parking,San Jose,any,any,no,no
+272,561,sharing,3,non-veg,2023-11-04,1956.9,near to grocery store,4,1,gated community,San Jose,any,any,yes,no
+273,562,single,,any,2025-02-04,2149.45,,1,2,,San Francisco,any,any,yes,yes
+274,563,sharing,2,any,2024-11-07,398.73,,3,2,pool access,San Francisco,any,yes,yes,no
+275,566,single,,any,2023-08-29,2478.63,,4,2,,San Jose,any,no,yes,no
+276,568,sharing,3,any,2024-01-08,971.53,near to university,3,1,gated community,San Francisco,any,any,no,no
+277,569,sharing,5,any,2023-09-27,482.16,near to grocery store,3,1,pet-friendly,San Francisco,no,no,yes,yes
+278,570,single,,any,2025-01-06,1473.49,,2,1,pool access,San Francisco,any,no,no,yes
+279,571,single,,any,2024-02-26,708.46,near to university,2,2,gated community,San Jose,any,yes,yes,no
+280,572,single,,veg,2023-11-19,2221.45,,3,2,,San Francisco,any,yes,no,yes
+281,574,sharing,4,any,2023-09-16,1169.39,,1,1,apartment with parking,San Jose,any,any,yes,no
+282,575,single,,any,2023-11-22,2304.86,near to grocery store,1,2,gated community,San Jose,yes,no,no,no
+283,577,sharing,4,any,2024-03-08,2118.61,near to grocery store,4,1,gated community,San Jose,yes,any,no,no
+284,580,single,,any,2024-03-27,2190.21,near to school,4,1,gated community,San Francisco,any,no,yes,yes
+285,581,single,,any,2023-10-01,2911.18,near to school,3,1,apartment with parking,San Francisco,yes,yes,no,yes
+286,582,sharing,5,any,2023-07-04,2775.12,,3,1,apartment with parking,San Francisco,no,any,no,yes
+287,584,single,,veg,2024-10-25,992.28,near to university,4,2,gated community,San Francisco,any,any,no,yes
+288,585,single,,any,2023-10-12,1297.6,,4,2,,San Francisco,any,yes,yes,yes
+289,589,single,,any,2023-07-30,2271.19,near to university,4,2,gated community,San Jose,any,any,no,yes
+290,591,sharing,2,non-veg,2025-02-27,763.81,near to bus stop,2,2,gym facility,San Jose,any,any,yes,yes
+291,592,sharing,5,any,2025-03-14,2829.54,near to school,4,2,pet-friendly,San Francisco,no,yes,no,no
+292,594,single,,any,2024-04-08,1156.96,near to grocery store,4,2,pet-friendly,San Francisco,any,yes,no,yes
+293,596,sharing,5,veg,2023-09-27,456.31,,3,2,pool access,San Francisco,no,yes,no,no
+294,598,sharing,4,any,2024-01-20,1812.38,near to bus stop,3,1,,San Francisco,any,any,no,yes
+295,600,sharing,3,any,2025-03-07,693.26,,3,2,gated community,San Jose,any,any,no,no
+296,601,single,,any,2024-06-25,2822.61,near to school,2,2,,San Francisco,yes,yes,no,no
+297,602,sharing,2,non-veg,2023-10-18,2514.82,,2,2,,San Jose,yes,any,no,yes
+298,604,single,,non-veg,2024-04-27,2919.29,,1,2,,San Francisco,no,any,no,no
+299,605,sharing,3,any,2024-12-06,1552.62,near to grocery store,4,2,pool access,San Jose,any,any,no,no
+300,606,sharing,3,any,2023-06-29,1695.42,near to grocery store,1,2,pool access,San Francisco,yes,any,yes,no
+301,607,sharing,5,non-veg,2024-12-08,1440.56,,3,1,pet-friendly,San Francisco,any,any,yes,no
+302,608,single,,veg,2024-01-23,2918.07,near to grocery store,3,2,pet-friendly,San Francisco,any,any,yes,no
+303,609,sharing,2,any,2024-12-20,627.65,near to bus stop,1,1,apartment with parking,San Francisco,yes,yes,no,no
+304,612,single,,any,2023-05-25,1321.12,,2,1,gated community,San Jose,any,any,no,yes
+305,615,single,,any,2024-04-25,883.87,near to grocery store,2,1,gym facility,San Francisco,yes,yes,no,yes
+306,616,single,,veg,2024-08-23,659.97,near to bus stop,4,1,gated community,San Francisco,yes,yes,yes,yes
+307,618,sharing,2,veg,2023-07-23,1518.78,near to grocery store,3,2,gym facility,San Francisco,any,any,no,yes
+308,619,single,,non-veg,2024-12-20,1315.41,,2,2,pet-friendly,San Francisco,any,yes,no,no
+309,620,single,,veg,2024-10-26,2148.49,near to grocery store,2,2,,San Jose,no,any,no,yes
+310,626,sharing,2,any,2025-03-18,2004.44,near to grocery store,1,1,pet-friendly,San Jose,any,any,no,yes
+311,627,sharing,2,veg,2024-01-30,910.37,near to school,2,1,gated community,San Jose,any,any,yes,yes
+312,628,sharing,2,veg,2023-07-27,2375.23,near to school,3,2,apartment with parking,San Jose,no,any,no,yes
+313,629,single,,any,2024-05-11,468.62,near to school,2,1,,San Jose,any,any,no,yes
+314,634,sharing,4,any,2024-01-06,415.08,near to university,2,1,,San Jose,any,any,no,yes
+315,637,sharing,3,any,2023-05-27,1714.95,near to school,2,1,,San Jose,any,any,no,yes
+316,638,single,,non-veg,2023-06-30,800.13,near to university,2,1,apartment with parking,San Jose,any,yes,no,no
+317,639,sharing,2,non-veg,2024-02-22,1942.1,near to school,3,2,,San Jose,yes,any,yes,yes
+318,640,single,,any,2024-09-07,2473.95,near to school,3,2,,San Jose,any,any,yes,yes
+319,645,sharing,3,any,2025-01-10,2901.15,near to school,2,1,gym facility,San Francisco,yes,any,no,no
+320,649,sharing,5,any,2023-11-28,2239.99,near to school,2,2,pool access,San Francisco,no,any,yes,yes
+321,651,sharing,4,any,2024-04-13,733.69,,4,1,,San Jose,yes,any,yes,no
+322,655,sharing,4,any,2024-12-28,2022.25,,2,2,pet-friendly,San Jose,no,any,yes,no
+323,657,sharing,5,any,2024-01-11,602.66,near to grocery store,1,1,apartment with parking,San Jose,no,any,no,no
+324,662,single,,veg,2025-01-31,340.24,near to school,1,1,apartment with parking,San Jose,any,yes,no,no
+325,665,single,,non-veg,2024-08-25,722.53,,4,2,pet-friendly,San Francisco,any,any,no,no
+326,666,single,,any,2025-04-18,2905.0,near to university,2,1,gated community,San Jose,no,any,no,yes
+327,668,single,,any,2025-02-11,1790.25,near to bus stop,1,1,pool access,San Francisco,any,any,no,no
+328,671,single,,any,2025-02-12,661.11,near to university,2,2,pool access,San Jose,any,any,yes,no
+329,673,single,,any,2024-10-09,331.18,near to grocery store,4,2,,San Francisco,yes,no,no,yes
+330,675,single,,any,2023-08-08,2655.94,near to school,4,2,gated community,San Francisco,any,any,yes,yes
+331,676,single,,veg,2024-02-04,2965.56,,3,2,pool access,San Francisco,any,any,no,yes
+332,680,single,,any,2023-09-08,1531.17,,1,2,pool access,San Jose,any,any,yes,no
+333,681,single,,any,2024-10-29,1745.61,near to university,2,1,apartment with parking,San Jose,any,any,no,yes
+334,682,single,,any,2024-09-02,593.93,near to grocery store,2,1,gated community,San Francisco,any,yes,yes,yes
+335,686,single,,veg,2023-12-17,2633.8,near to grocery store,1,2,gym facility,San Jose,any,any,no,no
+336,688,single,,non-veg,2023-08-29,1475.85,near to school,3,2,pet-friendly,San Jose,any,any,yes,no
+337,689,sharing,2,any,2024-11-26,1069.44,near to university,1,1,pet-friendly,San Francisco,any,any,yes,no
+338,690,single,,any,2023-07-15,2552.51,near to grocery store,3,2,gated community,San Jose,yes,any,yes,no
+339,694,sharing,2,any,2024-07-11,2885.53,near to school,4,1,gated community,San Jose,any,any,yes,yes
+340,705,sharing,4,any,2023-05-06,1152.11,,3,1,pool access,San Francisco,any,any,yes,no
+341,708,single,,any,2024-08-25,2833.07,near to grocery store,3,1,pool access,San Jose,any,any,yes,yes
+342,709,single,,any,2024-11-21,515.66,near to school,2,1,pet-friendly,San Jose,any,any,no,no
+343,712,single,,any,2024-04-17,2384.31,near to school,3,2,gated community,San Francisco,any,any,yes,yes
+344,713,single,,any,2023-09-16,2380.04,,1,1,,San Jose,any,yes,yes,no
+345,714,sharing,4,non-veg,2024-05-16,1539.93,near to university,2,1,,San Jose,any,any,no,no
+346,715,single,,veg,2024-06-09,1547.51,near to university,2,1,pet-friendly,San Jose,any,any,yes,no
+347,718,sharing,2,any,2025-02-07,1139.82,near to bus stop,1,2,pet-friendly,San Francisco,any,any,no,no
+348,720,sharing,5,any,2024-11-30,874.78,near to university,2,2,,San Jose,any,any,no,no
+349,722,sharing,4,any,2023-06-02,826.7,near to school,4,1,pool access,San Francisco,no,any,yes,yes
+350,724,sharing,4,any,2025-02-11,566.33,near to grocery store,3,1,,San Jose,yes,any,yes,yes
+351,726,single,,any,2024-06-22,2262.43,,4,1,,San Francisco,any,any,no,yes
+352,727,single,,any,2023-12-21,452.89,near to grocery store,4,2,pool access,San Jose,no,any,no,yes
+353,728,sharing,3,any,2025-03-27,578.12,,2,2,,San Francisco,no,any,no,yes
+354,729,single,,veg,2024-04-11,1371.72,near to school,1,1,pet-friendly,San Francisco,any,any,no,yes
+355,730,single,,any,2025-02-16,2437.47,,3,1,,San Francisco,no,any,yes,no
+356,731,single,,any,2024-12-05,1232.93,near to school,2,1,pool access,San Francisco,any,no,no,no
+357,733,single,,any,2024-03-10,1792.17,,1,2,gated community,San Francisco,no,yes,no,no
+358,736,single,,any,2024-05-29,1851.92,near to grocery store,3,2,pet-friendly,San Francisco,yes,any,yes,no
+359,737,single,,non-veg,2023-12-05,1371.34,,4,2,,San Jose,any,any,yes,no
+360,738,single,,any,2025-01-13,2975.22,near to grocery store,2,2,pet-friendly,San Jose,any,yes,yes,no
+361,739,single,,veg,2025-02-13,989.43,near to bus stop,4,2,,San Jose,any,no,no,yes
+362,741,single,,any,2023-09-09,1965.84,near to bus stop,1,2,apartment with parking,San Jose,any,any,yes,yes
+363,743,single,,any,2023-07-03,2344.99,,1,1,gated community,San Jose,any,any,yes,no
+364,744,sharing,3,non-veg,2024-09-07,763.98,near to university,3,2,,San Jose,any,any,no,no
+365,746,sharing,3,any,2024-09-05,2598.12,,3,2,apartment with parking,San Jose,any,any,no,no
+366,750,single,,any,2024-03-23,1086.16,near to university,1,1,,San Jose,any,any,yes,no
+367,751,single,,any,2023-09-01,2643.4,near to school,1,1,pool access,San Francisco,any,any,no,yes
+368,752,single,,any,2025-04-12,2291.97,near to bus stop,2,1,apartment with parking,San Jose,any,no,no,yes
+369,755,single,,any,2024-01-13,672.26,near to grocery store,4,2,,San Francisco,no,any,yes,yes
+370,758,single,,any,2024-07-24,2609.19,near to bus stop,3,2,,San Jose,any,any,yes,no
+371,761,sharing,4,non-veg,2024-05-04,2274.05,near to school,4,2,gated community,San Jose,no,any,yes,yes
+372,762,single,,any,2024-06-09,2891.48,near to university,4,2,,San Francisco,no,yes,no,yes
+373,763,single,,any,2023-11-07,2752.52,near to school,1,2,apartment with parking,San Jose,any,any,no,yes
+374,764,sharing,3,any,2023-08-28,700.63,,1,2,pool access,San Francisco,no,no,yes,yes
+375,765,sharing,3,any,2023-12-04,1776.98,near to grocery store,1,1,pet-friendly,San Jose,any,any,yes,yes
+376,770,sharing,4,any,2024-02-09,930.73,,4,1,,San Jose,any,any,yes,no
+377,773,single,,non-veg,2024-01-20,1625.66,near to bus stop,2,2,,San Francisco,any,yes,yes,yes
+378,774,sharing,5,any,2024-08-12,1803.13,near to university,4,2,,San Francisco,any,no,no,yes
+379,779,single,,any,2023-06-07,1258.45,near to grocery store,1,2,apartment with parking,San Jose,any,any,yes,no
+380,780,sharing,3,any,2024-09-09,1766.62,near to university,1,1,,San Jose,no,any,yes,no
+381,781,sharing,4,any,2024-12-02,1303.48,near to bus stop,1,2,gym facility,San Jose,any,any,yes,no
+382,782,sharing,4,any,2025-04-28,771.08,,2,1,apartment with parking,San Francisco,any,yes,yes,yes
+383,783,single,,veg,2024-09-22,598.57,near to university,1,2,gym facility,San Francisco,any,any,yes,yes
+384,786,sharing,3,any,2023-12-20,2556.19,,4,2,,San Francisco,any,no,no,no
+385,789,sharing,3,non-veg,2023-12-11,2680.2,,3,1,pool access,San Francisco,any,any,yes,no
+386,791,sharing,2,any,2024-10-08,2216.75,near to university,1,2,,San Jose,any,any,no,no
+387,793,single,,any,2025-01-15,2519.8,,4,1,gated community,San Jose,any,no,no,no
+388,794,single,,any,2023-09-07,1135.68,near to bus stop,4,2,,San Jose,yes,any,yes,yes
+389,795,single,,non-veg,2023-07-22,1670.59,,2,1,pet-friendly,San Jose,no,any,yes,no
+390,797,single,,any,2023-11-03,2236.94,near to school,2,1,,San Jose,any,any,yes,yes
+391,798,single,,any,2023-07-18,2193.23,,1,1,,San Jose,any,any,no,no
+392,800,sharing,3,any,2025-03-04,2730.19,,4,1,gym facility,San Francisco,any,yes,yes,yes
+393,806,sharing,4,non-veg,2024-05-08,1842.37,near to bus stop,4,1,,San Francisco,any,any,yes,yes
+394,810,sharing,3,any,2024-09-26,878.58,near to grocery store,1,2,apartment with parking,San Francisco,no,any,yes,no
+395,811,single,,any,2024-06-16,2839.69,near to bus stop,4,2,apartment with parking,San Jose,yes,any,no,no
+396,812,single,,any,2024-04-02,945.49,near to university,4,1,gated community,San Jose,any,any,yes,yes
+397,814,sharing,4,non-veg,2025-05-03,715.73,,1,1,apartment with parking,San Jose,any,no,no,yes
+398,815,sharing,4,veg,2023-05-23,1518.77,,3,1,,San Jose,any,any,no,yes
+399,816,sharing,3,non-veg,2024-05-24,2074.08,near to bus stop,4,1,apartment with parking,San Jose,any,any,no,no
+400,817,single,,non-veg,2023-10-03,1271.65,near to grocery store,2,1,pool access,San Francisco,any,any,no,yes
+401,821,single,,any,2024-06-25,1287.46,near to university,2,1,apartment with parking,San Francisco,yes,any,yes,no
+402,824,sharing,2,any,2024-08-21,2436.9,near to grocery store,2,2,,San Jose,yes,any,yes,yes
+403,826,single,,any,2024-12-02,503.08,near to university,3,1,pet-friendly,San Jose,any,any,yes,yes
+404,827,single,,any,2023-11-26,751.6,near to grocery store,4,1,pet-friendly,San Jose,no,any,yes,no
+405,831,sharing,5,any,2024-07-13,2785.19,near to grocery store,1,1,gym facility,San Francisco,any,yes,yes,no
+406,832,single,,any,2024-02-24,961.46,,4,1,,San Jose,any,no,no,no
+407,833,sharing,2,any,2025-03-04,2645.93,near to bus stop,4,1,gym facility,San Francisco,any,any,yes,yes
+408,838,sharing,3,any,2023-05-06,2193.9,near to university,1,1,,San Jose,any,any,yes,no
+409,839,single,,non-veg,2024-07-05,1084.49,,2,1,pool access,San Francisco,any,any,yes,no
+410,840,single,,any,2024-02-22,2996.25,near to bus stop,2,1,pool access,San Francisco,any,any,no,yes
+411,841,sharing,2,any,2024-06-04,523.49,,3,1,gated community,San Jose,no,any,no,no
+412,842,sharing,4,veg,2025-03-09,1234.66,,1,2,pet-friendly,San Francisco,yes,yes,no,no
+413,843,single,,non-veg,2023-12-01,2665.75,,2,2,,San Francisco,any,no,no,no
+414,844,single,,any,2025-03-12,1411.59,near to bus stop,2,1,apartment with parking,San Francisco,no,any,no,yes
+415,845,sharing,3,any,2023-06-02,1138.79,near to school,4,2,,San Francisco,no,any,yes,yes
+416,846,single,,veg,2024-09-07,2467.56,,2,1,,San Francisco,any,no,no,yes
+417,847,single,,any,2023-12-25,2842.82,near to university,2,1,,San Jose,any,any,yes,yes
+418,848,single,,any,2023-11-01,2386.88,,2,1,gated community,San Jose,any,any,no,yes
+419,850,single,,any,2023-06-03,2510.17,,3,1,,San Jose,any,yes,no,yes
+420,855,sharing,4,any,2024-04-02,2111.84,near to bus stop,1,1,apartment with parking,San Francisco,any,any,yes,yes
+421,856,sharing,2,any,2024-02-02,643.53,,4,1,gym facility,San Jose,any,any,no,no
+422,859,sharing,4,non-veg,2023-09-01,321.8,,2,2,pet-friendly,San Jose,any,any,yes,no
+423,861,sharing,4,any,2023-10-24,460.02,,4,2,gym facility,San Jose,any,yes,yes,yes
+424,865,sharing,3,any,2024-02-15,1283.44,near to school,2,2,,San Francisco,any,any,yes,no
+425,867,sharing,4,any,2023-10-26,1724.05,,1,2,apartment with parking,San Francisco,any,no,no,no
+426,870,sharing,5,any,2024-06-14,2643.63,near to grocery store,1,2,gated community,San Jose,any,any,no,yes
+427,871,single,,any,2023-08-23,2689.79,near to university,2,2,gym facility,San Jose,no,any,yes,no
+428,872,single,,veg,2024-09-05,898.3,near to bus stop,4,1,gym facility,San Jose,any,any,yes,no
+429,874,sharing,4,any,2023-12-09,1490.69,near to university,2,2,,San Francisco,any,yes,no,yes
+430,876,single,,any,2023-10-04,339.04,near to school,1,1,gym facility,San Jose,any,any,yes,no
+431,878,sharing,4,non-veg,2025-02-28,1905.41,near to school,2,2,apartment with parking,San Jose,any,any,yes,no
+432,879,sharing,3,any,2024-10-24,2103.4,,3,1,apartment with parking,San Francisco,any,any,yes,no
+433,880,single,,non-veg,2025-03-18,1691.93,near to bus stop,2,1,gym facility,San Jose,yes,any,yes,yes
+434,882,sharing,4,any,2024-12-02,1704.67,,1,1,,San Jose,any,any,no,no
+435,884,sharing,4,any,2024-12-13,2357.07,near to bus stop,2,1,gated community,San Jose,no,any,yes,yes
+436,885,single,,any,2024-09-24,2924.58,,3,1,pet-friendly,San Francisco,any,no,no,yes
+437,886,single,,any,2024-03-09,1205.7,near to bus stop,3,2,gym facility,San Jose,no,any,no,yes
+438,887,sharing,3,any,2025-05-01,2769.66,near to university,4,1,pool access,San Francisco,any,any,no,yes
+439,889,single,,any,2025-02-17,1569.48,near to university,4,2,gym facility,San Francisco,any,yes,no,no
+440,892,single,,any,2023-08-06,2294.32,near to bus stop,1,1,gated community,San Jose,yes,any,no,no
+441,893,single,,any,2024-01-21,744.98,near to school,4,1,pet-friendly,San Jose,any,any,no,no
+442,894,sharing,3,any,2024-05-31,2848.63,,2,1,,San Francisco,any,any,no,no
+443,895,single,,any,2025-03-07,551.24,near to grocery store,1,1,,San Francisco,any,any,yes,yes
+444,896,sharing,3,veg,2024-09-02,2360.61,,2,2,gym facility,San Francisco,any,no,no,no
+445,897,sharing,3,any,2023-12-24,1415.9,near to school,1,2,,San Jose,any,yes,yes,no
+446,901,single,,non-veg,2024-04-16,2365.45,near to grocery store,1,2,,San Jose,no,any,yes,no
+447,909,single,,any,2024-07-21,2234.0,,3,2,apartment with parking,San Jose,any,no,yes,no
+448,911,single,,any,2023-05-31,2092.8,near to bus stop,1,1,,San Jose,any,any,no,yes
+449,912,single,,veg,2024-06-07,1321.88,near to bus stop,3,2,pool access,San Jose,any,any,yes,yes
+450,917,sharing,5,any,2024-04-28,2348.1,near to school,2,2,,San Jose,yes,yes,yes,yes
+451,919,single,,non-veg,2025-02-15,2340.39,near to university,3,2,gated community,San Francisco,no,any,no,yes
+452,922,single,,any,2023-11-03,839.8,near to grocery store,3,1,apartment with parking,San Francisco,any,any,no,no
+453,923,single,,any,2023-05-06,2934.47,near to school,4,1,,San Jose,any,any,yes,no
+454,925,sharing,4,any,2023-11-06,937.25,,1,1,gym facility,San Jose,any,any,yes,no
+455,926,sharing,4,any,2024-12-13,1773.47,near to school,3,2,,San Jose,any,no,no,no
+456,928,single,,any,2024-10-15,1309.25,near to grocery store,1,2,,San Francisco,any,any,no,yes
+457,930,single,,veg,2024-06-15,2604.56,near to school,2,1,,San Jose,any,any,yes,yes
+458,931,single,,non-veg,2024-11-30,2802.1,,2,1,gym facility,San Francisco,any,any,no,yes
+459,934,single,,any,2025-03-18,2459.34,near to university,3,1,,San Jose,no,any,no,yes
+460,935,sharing,4,non-veg,2024-06-23,1274.56,,3,2,,San Francisco,any,any,no,yes
+461,939,sharing,4,any,2025-04-26,2254.61,,3,2,,San Francisco,any,any,yes,yes
+462,940,single,,any,2025-04-18,2938.28,near to bus stop,2,1,gated community,San Jose,any,any,yes,yes
+463,949,single,,any,2025-02-28,1738.19,near to bus stop,2,2,pet-friendly,San Francisco,yes,any,yes,yes
+464,952,single,,non-veg,2024-08-05,2110.56,near to school,1,1,gym facility,San Francisco,any,any,yes,yes
+465,953,single,,veg,2023-09-09,2076.48,,1,2,,San Jose,no,yes,yes,yes
+466,954,single,,any,2025-01-30,2886.86,,4,1,pet-friendly,San Jose,any,any,no,no
+467,961,single,,non-veg,2024-09-17,2007.23,near to bus stop,3,2,pool access,San Francisco,any,any,yes,yes
+468,964,sharing,2,non-veg,2024-10-25,1129.38,near to bus stop,3,2,,San Jose,any,yes,no,yes
+469,965,single,,non-veg,2025-03-04,2901.26,,4,2,pool access,San Jose,yes,any,yes,no
+470,966,sharing,2,any,2023-12-27,850.92,,2,1,,San Francisco,yes,any,no,no
+471,967,single,,any,2023-07-08,2417.12,,4,2,gym facility,San Jose,any,any,no,no
+472,969,single,,any,2023-10-28,2062.32,near to bus stop,3,2,,San Francisco,no,any,yes,yes
+473,974,sharing,4,veg,2025-04-06,885.78,near to grocery store,1,2,pet-friendly,San Francisco,no,yes,no,yes
+474,976,single,,non-veg,2024-04-15,2083.16,near to bus stop,2,2,,San Francisco,any,any,no,yes
+475,978,sharing,5,any,2023-08-01,1318.21,near to school,2,2,gated community,San Jose,any,any,yes,yes
+476,979,sharing,4,any,2025-05-01,2044.08,near to school,2,1,gym facility,San Jose,any,any,yes,no
+477,981,sharing,4,any,2023-10-25,2539.89,near to bus stop,3,2,gated community,San Francisco,yes,any,no,no
+478,988,single,,any,2023-10-04,2888.99,near to university,4,1,,San Francisco,no,any,yes,no
+479,995,sharing,5,non-veg,2025-01-15,1351.67,near to grocery store,3,2,gated community,San Jose,any,any,no,yes
+480,998,sharing,4,veg,2024-07-20,2591.59,near to grocery store,1,2,gym facility,San Jose,no,any,no,yes
